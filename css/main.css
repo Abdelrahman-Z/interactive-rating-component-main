@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+    background-color: hsl(216, 12%, 8%);
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+.body{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.body .container{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+.body .container .card{
+    background-color: hsl(213, 19%, 18%);
+    width: 350px;
+    /* height: 350px; */
+    padding: 20px;
+    border-radius: 8px;
+}
+.body .container .card .image{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #312c2d;
+    width: fit-content;
+}
+.body .container .card .text h1{
+    color: white;
+    text-transform: capitalize;
+}
+.body .container .card .text p{
+    color: hsl(217, 12%, 63%);
+}
+
+.list{
+    margin-top: 60px;
+}
+.list ul{
+    padding: 0%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list ul li{
+    color: #767d89 ;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #253037;
+    font-size: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+.list ul li.active{
+    color: white;
+    background-color:hsl(217, 12%, 63%) ;
+}
+
+.list ul li:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.card button{
+    width: 100%;
+    margin: 20px 5px 5px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: .3s ;
+}
+.card button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.new{
+  text-align: center;
+}
+.new .text-list{
+  color: hsl(25, 97%, 53%);
+  background-color: #323a41;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 40px;
+  margin-left:auto ;
+  margin-right:auto ;
+}
+.new h1{
+  color: white;
+}
+.new .last-text{
+  color: #7b8996;
+}
+
+@media(max-width:767px){
+  .card{
+    width: 375px !important;
+    padding: 10px 5px !important ;
+  }
+  .container{
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+}
